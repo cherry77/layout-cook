@@ -32,8 +32,6 @@ defineProps({
     margin: 0;
     transition: .1s;
     font-weight: 500;
-    width: 100%;
-    height: 100%;
     font-size: 14px;
 
     &:active {

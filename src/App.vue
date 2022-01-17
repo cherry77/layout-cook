@@ -16,7 +16,7 @@
 import { ref } from 'vue'
 import Toolbar from '@/components/Toolbar.vue'
 import ComponentList from '@/components/ComponentList.vue'
-import Editor from '@/components/Editor.vue'
+import Editor from '@/components/Editor/index.vue'
 import componentList from '@/custom-components/list'
 import { useAppStore } from '@/store/modules/app'
 import { cloneDeep } from 'lodash-es';
