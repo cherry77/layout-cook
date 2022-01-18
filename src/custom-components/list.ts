@@ -1,5 +1,6 @@
 const list = [
 	{
+    name: 'v-button',
 		component: 'v-button',
 		label: '按钮',
 		propValue: '按钮',
