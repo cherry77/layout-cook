@@ -5,6 +5,7 @@ export default function useBlockDragger (focusBlocks) {
     startPos: {}
   }
   const mousemove = (e: MouseEvent) => {
+    console.log('---move---')
     const { clientX: moveX, clientY: moveY } = e
     const durX = moveX - dragState.startX
     const durY = moveY - dragState.startY

@@ -16,7 +16,11 @@ export default function useFocus(data, callback){
     e.stopPropagation()
     // 按住ctrl可选中多个
     if (e.ctrlKey) {
-      block.focus = !block.focus
+      if(focusBlocks.value.focus.length <= 1){ // 如果只剩一个，再次点击还是focused，如果不处理，再次点击定住移动还是走move, 因为是在focus还为true的时候点击的
+        block.focus = true
+      }else{
+        block.focus = !block.focus
+      }
     } else {
       if (!block.focus) {
         cleatBlocksFocus()
