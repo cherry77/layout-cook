@@ -15,7 +15,8 @@ import { Button } from 'ant-design-vue'
     padding: 15px 10px;
     background: #fff;
     border-bottom: 1px solid #ddd;
-    height: 64px;
+    height: 60px;
+    box-sizing: border-box;
     .ant-btn{
       font-size: 12px;
       margin-left: 8px;
